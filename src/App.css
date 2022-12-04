@@ -1,38 +1,247 @@
 .App {
-  text-align: center;
+    position: relative;
+    width: 100%;
+    height: 3080px;
+    display: flex;
+    flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.highlight {
+    color: #ffc077;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.nav-bar-container {
+    position: sticky;
+    top: 0;
+    height: 214px;
+    width: 100%;
+    background-color: #1A1D2E;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 5;
+    padding: 1% 10%;
+
+    box-sizing: border-box;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-bar-container a {
+    margin: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
 }
 
-.App-link {
-  color: #61dafb;
+.branding-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.landing {
+    position: relative;
+    width: 100%;
+    padding: 0 10%;
+    box-sizing: border-box;
+
+}
+
+.landing-container {
+    z-index: 3;
+    position: relative;
+    width: 100%;
+    height: 864px;
+    background: #1a1d2e;
+    padding: 40px 0px;
+    box-sizing: border-box;
+}
+
+.landing-headings {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Squiggle1 {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.landing-headings h1 {
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 72px;
+    letter-spacing: 0.05em;
+    text-shadow: 0px 0px 6px rgba(255,255,255, 0.3);
+}
+
+.landing-contents {
+    padding: 50px 80px;
+}
+
+.landing-contents h2 {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.12em;
+    color: #fff;
+    width: 800px;
+    margin: 0;
+}
+
+.contact-container {
+    margin-top: 70px;
+    width: 180px;
+    height: 60px;
+    border-radius: 10px;
+    background: #ffc077;
+    box-shadow: 0px 0px 6px rgba(227, 208, 156, 0.33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container a {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+.app-contents {
+    position: relative;
+    background: #151828;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.for-work-container {
+    margin: 80px 0;
+    position: relative;
+    width: 84%;
+    height: 850px;
+}
+
+.shadow {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 97%;
+    height: 800px;
+    background-color: #111422;
+    border-radius: 43px;
+}
+
+.for-work-contents {
+    padding: 124px 48px 90px 94px;
+    box-sizing: border-box;
+    position: absolute;
+    width: 97%;
+    height: 800px;
+    background: #1a1d2e;
+    z-index: 4;
+    right: 0;
+    top: 0;
+    border-radius: 43px;
+    display: flex;
+    flex-direction: row;
+}
+
+.for-work-header h1{
+    font-weight: 600;
+    font-size: 64px;
+    letter-spacing: 0.05em;
+    color: #fff;
+    text-shadow: 0px 0px 6px rgba(255, 255,255, 0.3);
+    margin: 0;
+}
+
+.for-work-description {
+    padding: 50px 80px
+}
+
+.for-work-description h2 {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    width: 705px;
+    color: #fff;
+    margin: 0;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-display {
+    width: 510px;
+    height: 150px;
+    background: #151829;
+    border-radius: 75px 0px 0px 75px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.service-icon {
+    width: 150px;
+    height: 150px;
+    background: #131524;
+    border-radius: 75px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.services-container h2 {
+    width: 313px;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: #fff;
+    margin: 0;
+    padding-left: 20px;
+}
+.take-on-work-description  {
+    padding: 50px 80px;
+    
+
+}
+.take-on-work-description h2 {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    width: 950px;
+    color: #fff;
+    margin: 0;
+}
+.descriptions {
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.lets-talk-description {
+    padding: 50px 80px;
+}
+
+.lets-talk-description h2{
+    width: 950px;
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.12em;
+    color: #fff;
 }
