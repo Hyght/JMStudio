@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/JMStudio/static/css/main.6acea79b.css",
+    "main.css": "/JMStudio/static/css/main.bbb5b628.css",
     "main.js": "/JMStudio/static/js/main.a36b8a41.js",
     "static/media/Squiggle1.png": "/JMStudio/static/media/Squiggle1.24f6ec77509d2d64d093.png",
     "index.html": "/JMStudio/index.html",
-    "main.6acea79b.css.map": "/JMStudio/static/css/main.6acea79b.css.map",
+    "main.bbb5b628.css.map": "/JMStudio/static/css/main.bbb5b628.css.map",
     "main.a36b8a41.js.map": "/JMStudio/static/js/main.a36b8a41.js.map"
   },
   "entrypoints": [
-    "static/css/main.6acea79b.css",
+    "static/css/main.bbb5b628.css",
     "static/js/main.a36b8a41.js"
   ]
 }
