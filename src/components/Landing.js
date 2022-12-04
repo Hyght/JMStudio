@@ -10,7 +10,7 @@ function Landing() {
 
   return (
     <div className='landing-container'>
-        <img src={Squiggle} className="Squiggle1"/>
+        <img src={Squiggle} className="Squiggle1" alt=""/>
         <div className='landing-headings'>
             <h1><span className='highlight'>One</span> Solution For</h1>
             <h1><span className='highlight'>All</span> Of Your Designs.</h1>
@@ -18,10 +18,9 @@ function Landing() {
         <div className='landing-contents'>
             <h2 className='landing-text'>Working alongside <span className='highlight'>30+</span> Graphic Designers, as well as handling a fast moving chain of clients, we provide the best solution to those looking <span className='highlight'>for/to</span> work.</h2>
             <div className='contact-container'>
-                <a onClick={shush}>Get In Touch</a>
+                <button onClick={shush}>Get In Touch</button>
             </div>
         </div>  
-        <a id="ForWork"/>
 
     </div>
   )

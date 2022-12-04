@@ -12,7 +12,6 @@ function TakeOnWork() {
     return (
         
         <div className="for-work-container">
-            <a id="TakeOn"/>
 
             <div className="for-work-contents">
                 <div className="for-work-header">
@@ -41,7 +40,7 @@ function TakeOnWork() {
                         </div>
 
                         <div className="contact-container">
-                            <a onClick={shush}>Get In Touch</a>
+                            <button onClick={shush}>Get In Touch</button>
                         </div>
                     </div>
                 </div>

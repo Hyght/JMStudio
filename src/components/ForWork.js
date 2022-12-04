@@ -31,14 +31,14 @@ function ForWork() {
                             the job.
                         </h2>
                         <div className="contact-container">
-                            <a onClick={shush}>Get In Touch</a>
+                            <button onClick={shush}>Get In Touch</button>
                         </div>
                     </div>
                 </div>
                 <div className="services-container">
                     <div className="service-display">
                         <div className="service-icon">
-                            <img src={web}/>
+                            <img src={web} alt=""/>
                         </div>
                         <h2 className="service-description">
                             <span className="highlight">Professional</span> Websites Both Designed And/Or Developed By Our Team
@@ -46,7 +46,7 @@ function ForWork() {
                     </div>
                     <div className="service-display">
                         <div className="service-icon">
-                            <img src={paintbrush}/>
+                            <img src={paintbrush} alt=""/>
                         </div>
                         <h2 className="service-description">
                             <span className="highlight">Executive</span> Branding Including Logos, Twitter banners, And Custom Artworks.
@@ -54,7 +54,7 @@ function ForWork() {
                     </div>
                     <div className="service-display">
                         <div className="service-icon">
-                            <img src={image}/>
+                            <img src={image} alt=""/>
 
                         </div>
                         <h2 className="service-description">

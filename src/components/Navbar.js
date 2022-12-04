@@ -18,18 +18,18 @@ function Navbar() {
   return (
     <div className='nav-bar-container'>
         <div className='branding-container'>
-            <img src={JMStudio}/>
-            <a className='header-branding'><span className='highlight'>JM</span> STUDIO</a>
+            <img src={JMStudio} alt=""/>
+            <button className='header-branding'><span className='highlight'>JM</span> STUDIO</button>
         </div>
-        <a onClick={goToFor}>
+        <button onClick={goToFor}>
             LOOKING <span className='highlight'>FOR</span> WORK
-        </a>
-        <a onClick={goToTake}>
+        </button>
+        <button onClick={goToTake}>
             LOOKING <span className='highlight'>TO</span> WORK
-        </a>
-        <a onClick={goToContact}>
+        </button>
+        <button onClick={goToContact}>
             <span className='highlight'>CONTACT US</span> 
-        </a>
+        </button>
     </div>
   )
 }
