@@ -110,11 +110,14 @@
     align-items: center;
 }
 
-.contact-container a {
+.contact-container button {
     font-weight: 500;
     font-size: 18px;
     letter-spacing: 0.05em;
     color: white;
+    border: none;
+    background-color: transparent;
+    font-family: inherit;
 }
 
 .app-contents {
