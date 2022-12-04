@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/JMStudio/static/css/main.48e7e7bb.css",
+    "main.js": "/JMStudio/static/js/main.24c68185.js",
+    "static/media/Squiggle1.png": "/JMStudio/static/media/Squiggle1.24f6ec77509d2d64d093.png",
+    "index.html": "/JMStudio/index.html",
+    "main.48e7e7bb.css.map": "/JMStudio/static/css/main.48e7e7bb.css.map",
+    "main.24c68185.js.map": "/JMStudio/static/js/main.24c68185.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48e7e7bb.css",
+    "static/js/main.24c68185.js"
+  ]
+}
