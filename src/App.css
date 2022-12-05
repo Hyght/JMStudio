@@ -1,7 +1,7 @@
 .App {
     position: relative;
     width: 100%;
-    height: 3080px;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -13,7 +13,6 @@
 .nav-bar-container {
     position: sticky;
     top: 0;
-    height: 214px;
     width: 100%;
     background-color: #1A1D2E;
     display: flex;
@@ -29,12 +28,20 @@
 .nav-bar-container button {
     margin: 0;
     color: white;
-    font-size: 18px;
     font-weight: 500;
     letter-spacing: 0.05em;
     background-color: transparent;
-    border: none;
+    border: transparent;
     font-family: inherit;
+}
+.nav-bar-container button::after {
+    border-bottom: solid 3px #019fb6;  
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+    transform-origin:  0% 50%;
+}
+.nav-bar-container button:hover::after {
+    transform: scaleX(1);
 }
 
 .branding-container {
@@ -57,7 +64,6 @@
     z-index: 3;
     position: relative;
     width: 100%;
-    height: 864px;
     background: #1a1d2e;
     padding: 40px 0px;
     box-sizing: border-box;
@@ -80,7 +86,6 @@
     margin: 0;
     color: white;
     font-weight: 600;
-    font-size: 72px;
     letter-spacing: 0.05em;
     text-shadow: 0px 0px 6px rgba(255,255,255, 0.3);
 }
@@ -91,7 +96,6 @@
 
 .landing-contents h2 {
     font-weight: 500;
-    font-size: 30px;
     letter-spacing: 0.12em;
     color: #fff;
     width: 800px;
@@ -99,9 +103,7 @@
 }
 
 .contact-container {
-    margin-top: 70px;
     width: 180px;
-    height: 60px;
     border-radius: 10px;
     background: #ffc077;
     box-shadow: 0px 0px 6px rgba(227, 208, 156, 0.33);
@@ -112,7 +114,6 @@
 
 .contact-container button {
     font-weight: 500;
-    font-size: 18px;
     letter-spacing: 0.05em;
     color: white;
     border: none;
@@ -152,7 +153,7 @@
     padding: 124px 48px 90px 94px;
     box-sizing: border-box;
     position: absolute;
-    width: 97%;
+    width: 100%;
     height: 800px;
     background: #1a1d2e;
     z-index: 4;
@@ -250,4 +251,277 @@
     font-size: 30px;
     letter-spacing: 0.12em;
     color: #fff;
+}
+
+
+@media only screen and (min-width: 1000px) {
+    .App {
+        position: relative;
+        width: 100%;
+        height: 3080px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .highlight {
+        color: #ffc077;
+    }
+
+    .nav-bar-container {
+        position: sticky;
+        top: 0;
+        height: 214px;
+        width: 100%;
+        background-color: #1A1D2E;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 5;
+        padding: 1% 10%;
+
+        box-sizing: border-box;
+    }
+
+    .nav-bar-container button {
+        margin: 0;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        background-color: transparent;
+        border: transparent;
+        font-family: inherit;
+    }
+
+    .nav-bar-container button::after {
+        border-bottom: solid 3px #019fb6;
+        transform: scaleX(0);
+        transition: transform 250ms ease-in-out;
+        transform-origin: 0% 50%;
+    }
+
+    .nav-bar-container button:hover::after {
+        transform: scaleX(1);
+    }
+
+    .branding-container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    .landing {
+        position: relative;
+        width: 100%;
+        padding: 0 10%;
+        box-sizing: border-box;
+
+    }
+
+    .landing-container {
+        z-index: 3;
+        position: relative;
+        width: 100%;
+        height: 864px;
+        background: #1a1d2e;
+        padding: 40px 0px;
+        box-sizing: border-box;
+    }
+
+    .landing-headings {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .Squiggle1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .landing-headings h1 {
+        margin: 0;
+        color: white;
+        font-weight: 600;
+        font-size: 72px;
+        letter-spacing: 0.05em;
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3);
+    }
+
+    .landing-contents {
+        padding: 50px 80px;
+    }
+
+    .landing-contents h2 {
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 0.12em;
+        color: #fff;
+        width: 800px;
+        margin: 0;
+    }
+
+    .contact-container {
+        margin-top: 70px;
+        width: 180px;
+        height: 60px;
+        border-radius: 10px;
+        background: #ffc077;
+        box-shadow: 0px 0px 6px rgba(227, 208, 156, 0.33);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-container button {
+        font-weight: 500;
+        font-size: 18px;
+        letter-spacing: 0.05em;
+        color: white;
+        border: none;
+        background-color: transparent;
+        font-family: inherit;
+    }
+
+    .app-contents {
+        position: relative;
+        background: #151828;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .for-work-container {
+        margin: 80px 0;
+        position: relative;
+        width: 84%;
+        height: 850px;
+    }
+
+    .shadow {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: 3;
+        width: 97%;
+        height: 800px;
+        background-color: #111422;
+        border-radius: 43px;
+    }
+
+    .for-work-contents {
+        padding: 124px 5% 90px 94px;
+        box-sizing: border-box;
+        position: absolute;
+        width: 97%;
+        height: 800px;
+        background: #1a1d2e;
+        z-index: 4;
+        right: 0;
+        top: 0;
+        border-radius: 43px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .for-work-header h1 {
+        font-weight: 600;
+        font-size: 64px;
+        letter-spacing: 0.05em;
+        color: #fff;
+        text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3);
+        margin: 0;
+    }
+
+    .for-work-description {
+        padding: 50px 80px
+    }
+
+    .for-work-description h2 {
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+        width: 705px;
+        color: #fff;
+        margin: 0;
+    }
+
+    .services-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .service-display {
+        width: fit-content;
+        height: 150px;
+        background: #151829;
+        border-radius: 75px 0px 0px 75px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .service-icon {
+        width: 150px;
+        height: 150px;
+        background: #131524;
+        border-radius: 75px;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .services-container h2 {
+        width: 313px;
+        font-weight: 500;
+        font-size: 100%;
+        letter-spacing: 0.1em;
+        color: #fff;
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    .take-on-work-description {
+        padding: 50px 80px;
+
+
+    }
+
+    .take-on-work-description h2 {
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 0.1em;
+        width: 950px;
+        color: #fff;
+        margin: 0;
+    }
+
+    .descriptions {
+        height: 320px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .lets-talk-description {
+        padding: 50px 80px;
+    }
+
+    .lets-talk-description h2 {
+        width: 950px;
+        font-weight: 500;
+        font-size: 30px;
+        letter-spacing: 0.12em;
+        color: #fff;
+    }
 }
