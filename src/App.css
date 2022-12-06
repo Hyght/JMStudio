@@ -4,10 +4,15 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .highlight {
     color: #ffc077;
+}
+
+* {
+    font-family: 'Poppins';
 }
 
 .nav-bar-container {
@@ -79,7 +84,6 @@
 .Squiggle1 {
     position: absolute;
     right: 0;
-    top: 0;
 }
 
 .landing-headings h1 {
@@ -150,7 +154,7 @@
 }
 
 .for-work-contents {
-    padding: 124px 48px 90px 94px;
+    padding: 12vh 48px 90px 94px;
     box-sizing: border-box;
     position: absolute;
     width: 100%;
@@ -325,30 +329,32 @@
         z-index: 3;
         position: relative;
         width: 100%;
-        height: 864px;
+        height: 85vh;
         background: #1a1d2e;
         padding: 40px 0px;
-        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
     }
 
     .landing-headings {
         position: relative;
         display: flex;
         flex-direction: column;
-
+        width: 100%;
     }
 
     .Squiggle1 {
         position: absolute;
+        width: 53vh;
         right: 0;
-        top: 0;
+        bottom: 10vh;
     }
 
     .landing-headings h1 {
         margin: 0;
         color: white;
         font-weight: 600;
-        font-size: 72px;
+        font-size: 400%;
         letter-spacing: 0.05em;
         text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3);
     }
@@ -359,10 +365,10 @@
 
     .landing-contents h2 {
         font-weight: 500;
-        font-size: 30px;
+        font-size: 180%;
         letter-spacing: 0.12em;
         color: #fff;
-        width: 800px;
+        width: 50%;
         margin: 0;
     }
 
@@ -402,7 +408,7 @@
         margin: 80px 0;
         position: relative;
         width: 84%;
-        height: 850px;
+        height: 80vh;
     }
 
     .shadow {
@@ -411,17 +417,17 @@
         bottom: 0;
         z-index: 3;
         width: 97%;
-        height: 800px;
+        height: 95%;
         background-color: #111422;
         border-radius: 43px;
     }
 
     .for-work-contents {
-        padding: 124px 5% 90px 94px;
+        padding: 5%;
         box-sizing: border-box;
         position: absolute;
         width: 97%;
-        height: 800px;
+        height: 95%;
         background: #1a1d2e;
         z-index: 4;
         right: 0;
@@ -434,7 +440,8 @@
 
     .for-work-header h1 {
         font-weight: 600;
-        font-size: 64px;
+        font-size: 3vw;
+
         letter-spacing: 0.05em;
         color: #fff;
         text-shadow: 0px 0px 6px rgba(255, 255, 255, 0.3);
@@ -447,9 +454,9 @@
 
     .for-work-description h2 {
         font-weight: 500;
-        font-size: 30px;
+        font-size: 1.5vw;
         letter-spacing: 0.1em;
-        width: 705px;
+        width: 35vw;
         color: #fff;
         margin: 0;
     }
@@ -458,22 +465,23 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        height: 80%;
+        width: 36%;
     }
 
     .service-display {
-        width: fit-content;
-        height: 150px;
+        width: 100%;
+        height: 27%;
         background: #151829;
         border-radius: 75px 0px 0px 75px;
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0px 20px 0px 0px;
     }
 
     .service-icon {
-        width: 150px;
-        height: 150px;
+        height: 100%;
+        aspect-ratio: 1;
         background: #131524;
         border-radius: 75px;
         justify-content: center;
@@ -482,13 +490,14 @@
     }
 
     .services-container h2 {
-        width: 313px;
+        width: max-content;
         font-weight: 500;
         font-size: 100%;
         letter-spacing: 0.1em;
         color: #fff;
         margin: 0;
-        padding-left: 20px;
+        padding: 20px;
+        box-sizing: border-box;
     }
 
     .take-on-work-description {
