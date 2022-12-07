@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.326bccf9.css",
+    "main.css": "/static/css/main.78937e2d.css",
     "main.js": "/static/js/main.a77a3a64.js",
     "static/media/Squiggle1.png": "/static/media/Squiggle1.24f6ec77509d2d64d093.png",
     "index.html": "/index.html",
-    "main.326bccf9.css.map": "/static/css/main.326bccf9.css.map",
+    "main.78937e2d.css.map": "/static/css/main.78937e2d.css.map",
     "main.a77a3a64.js.map": "/static/js/main.a77a3a64.js.map"
   },
   "entrypoints": [
-    "static/css/main.326bccf9.css",
+    "static/css/main.78937e2d.css",
     "static/js/main.a77a3a64.js"
   ]
 }
