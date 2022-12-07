@@ -18,7 +18,7 @@ function Navbar() {
   return (
     <div className='nav-bar-container'>
         <div className='branding-container'>
-            <img src={JMStudio} alt=""/>
+            <img src={JMStudio} alt="" className='logo'/>
             <button className='header-branding'><span className='highlight'>JM</span> STUDIO</button>
         </div>
         <button onClick={goToFor}>
